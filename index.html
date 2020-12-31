@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+  <link rel="stylesheet" href="./resources/bootstrap.min.css">
+  <script src="./resources/jquery.min.js"></script>
+  <script src="./resources/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Language-Mediated, Object-Centric Representation Learning</h1>
+  <!-- <p>Resize this responsive page to see the effect!</p>  -->
+</div>
+  
+<div class="container">
+    <!-- <div class="row"> -->
+      <h2 class="text-center">Abstract</h2>
+      <hr>
+      <!-- <hr> -->
+    <!-- </div> -->
+    <p>
+        We present Language-mediated, Object-centric  Representation  Learning (LORL), a paradigm for learning disentangled, object-centric scene representations from vision and language. LORL builds upon recent advances in unsupervised object segmentation, notably MONet and Slot Attention. While these algorithms learn an object-centric representation just by reconstructing the input image, LORL enables them to further learn to associate the learned representations to concepts, i.e., words for object categories, properties, and spatial relationships, from language input. These object-centric concepts derived from language facilitate the learning of object-centric representations. LORL can be integrated with various unsupervised segmentation algorithms that are language-agnostic. Experiments show that the integration of LORL consistently improves the object segmentation performance of MONet and Slot Attention on two datasets via the help of language. We also show that concepts learned by LORL, in conjunction with segmentation algorithms such as MONet, aid downstream tasks such as referring expression comprehension.
+    </p>
+  </div><br><br>
+
+
+<div class="container bg-3">    
+    <!-- <div class="row"> -->
+      <h2 class="text-center">Motivation</h2>
+      <hr>
+      <div class="col-sm-12 text-center">
+        <img src="./resources/teaser.png" class="img-fluid center" style="width:auto" alt="Image">
+      </div>
+    <!-- </div> -->
+    <br>
+    <p>Two illustrative cases of Language-mediated, Object-centric Representation Learning. Different colors in the segmentation masks indicate individual objects recognized by the model. LORL can learn from visual and language inputs to associate various concepts: <i> black</i>, <i> pan</i>, <i>leg</i> with the visual appearance of individual objects. Furthermore, language provides cues about how an input scene should be segmented into individual objects: (a) segmenting the frying pan and its handle into two parts yields an incorrect answer to the question (Segmentation II); (b) an incorrect parsing of the chair image makes the counting result wrong (Segmentation II)
+    </p>
+  </div><br><br>
+
+<div class="container bg-3">    
+    <!-- <div class="row"> -->
+      <h2 class="text-center">Model</h2>
+      <hr>
+      <div class="col-sm-12 text-center">
+        <img src="./resources/model.png" class="img-responsive mx-auto" style="width:100%" alt="Image">
+      </div>
+    <!-- </div> -->
+    <br>
+  </div><br><br>
+
+</body>
+</html>
